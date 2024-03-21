@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather Dashboard</h1>
+      <input
+        type="text"
+        id="city-input"
+        placeholder="Search for a city..."
+      /><br /><br /><br />
+      <button id="search-btn">Search</button>
+      <div class="weather-info">
+        <h2 id="city-name"></h2>
+        <p>Temperature: <span id="temperature"></span></p>
+        <p>Humidity: <span id="humidity"></span></p>
+        <p>Wind Speed: <span id="wind-speed"></span></p>
+      </div>
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448193.9510803387!2d76.76354916726656!3d28.644287341781187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1711050539659!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="map.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+      async
+      defer
+    ></script>
+  </body>
+</html>

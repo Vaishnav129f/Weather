@@ -1,0 +1,76 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#city-input {
+  width: calc(100% - 80px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+}
+
+#search-btn {
+  width: 80px;
+  padding: 10px;
+  background-color: #007bff; /* Default blue color */
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Add transition effect for smooth color change */
+}
+
+#search-btn:hover {
+  background-color: #000; /* Black color on hover */
+}
+
+.weather-info {
+  margin-top: 30px;
+}
+
+.weather-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.weather-info p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.weather-info span {
+  font-weight: bold;
+}
+
+/* Optional: Add media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    margin: 30px auto;
+  }
+
+  #city-input {
+    width: 70%;
+  }
+}
